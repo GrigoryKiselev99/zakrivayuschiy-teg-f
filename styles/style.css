@@ -94,9 +94,17 @@
   line-height: 14px;
   font-family: 'PressStart2P';
   background-blend-mode: hard-light;
-  -webkit-text-stroke: 0.5px var(--stroke-color);
+  text-shadow: -0.5px 0 var(--stroke-color), 0 0.5px var(--stroke-color), 0.5px 0 var(--stroke-color), 0 -0.5px var(--stroke-color);
   opacity: 50%;
 }
+
+@supports((text-stroke: 0.5px var(--stroke-color)) or (-webkit-text-stroke: 0.5px var(--stroke-color))) {
+  .label {
+      -webkit-text-stroke: 0.5px var(--stroke-color);
+      text-stroke: 0.5px var(--stroke-color);
+      text-shadow: none;
+  }
+} 
 
 .main-text-block {
   display: flex;
