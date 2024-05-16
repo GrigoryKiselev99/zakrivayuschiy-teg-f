@@ -22,7 +22,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font) sans-serif;
-  font-variation-settings: var(--main-weight);
+  font-variation-settings: "wght" var(--main-weight);
   background-color: var(--main-color);
   color: var(--text-color);
   background-image: var(--background-color);
@@ -72,10 +72,10 @@
 }
 
 .card-title {
-  font-weight: var(--header-weight);
+  font-variation-settings: "wght" var(--header-weight);
   line-height: 21.78px;
   padding: 5px 10px;
-  font-family: 'Inter-Variable';
+  font-family: var(--main-font);
 }
 
 .card-image {
@@ -97,7 +97,7 @@
   right: 25px;
   font-size: 14px;
   line-height: 14px;
-  font-family: 'PressStart2P';
+  font-family: var(--accent-font);
   background-blend-mode: hard-light;
   text-shadow: -0.5px 0 var(--stroke-color), 0 0.5px var(--stroke-color), 0.5px 0 var(--stroke-color), 0 -0.5px var(--stroke-color);
   opacity: 50%;
@@ -118,7 +118,7 @@
   padding: 25px;
   font-weight: var(--main-weight);
   line-height: 21px;
-  font-family: 'Inter-Variable';
+  font-family: var(--main-font);
 }
 
 .theme-menu__button {
@@ -226,9 +226,9 @@
 }
 
 .card-button-text {
-  font-family: 'PressStart2P';
+  font-family: var(--accent-font);
   font-size: 14px;
-  font-weight: 400;
+  font-weight: var(--main-weight);
   line-height: 12.6px;
   text-align: center;
   color: var(--text-color);
@@ -278,11 +278,11 @@
 .save-button {
   margin: 0;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: var(--main-weight);
   line-height: 12.6px;
   width: 355px;
   height: 51px;
-  font-family: 'PressStart2P';
+  font-family: var(--accent-font);
   border: 2px solid var(--text-color);
   background-color: var(--main-color);
   position: relative;
@@ -355,8 +355,8 @@
   height: 38px;
   color: var(--text-color);
   font-size: 14px;
-  font-weight: 400;
-  font-family: 'PressStart2P';
+  font-weight: var(--main-weight);
+  font-family: var(--accent-font);
   line-height: 12.6px;
   border: 2px solid var(--text-color);
   background-color: var(--main-color);
@@ -374,9 +374,9 @@
 .dialog-text {
   color: var(--text-color);
   font-size: 14px;
-  font-weight: 400;
+  font-weight: var(--main-weight);
   line-height: 21px;
-  font-family: 'PressStart2P';
+  font-family: var(--accent-font);
   grid-area: 1 / 2 / 2 / 3;
 }
 
