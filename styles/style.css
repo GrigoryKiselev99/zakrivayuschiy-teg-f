@@ -12,6 +12,11 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
+@supports (font-variation-settings: normal) {
+  body {
+      font-family: 'Inter-Variable', sans-serif;
+  }
+} 
 
 .page {
   min-inline-size: 320px;
