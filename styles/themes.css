@@ -4,3 +4,78 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+  --main-font: 'Inter-Variable';
+  --accent-font: 'PressStart2P';
+  --main-weight: 400;
+  --header-weight: 700;
+  --main-color: #FFFFFF;
+  --text-color: #000000;
+  --stroke-color: #FFFFFF;
+  --button-text-color: #FFFFFF;
+  --contour-color: #000000;
+  --hover-heart-color: #000000;
+  --active-heart-color: #FF0000;
+  --background-color:
+  repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+  repeating-linear-gradient(180deg, #d3d3d3, transparent 2px),
+  linear-gradient(180deg, #E7E7E7 0.01%, #1A1A1A 100%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-font: 'Inter-Variable';
+    --accent-font: 'PressStart2P';
+    --main-weight: 400;
+    --header-weight: 700;
+    --main-color: #FFFFFF;
+    --text-color: #000000;
+    --stroke-color: #FFFFFF;
+    --button-text-color: #FFFFFF;
+    --contour-color: #000000;
+    --hover-heart-color: #000000;
+    --active-heart-color: #FF0000;
+    --background-color:
+    repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+    repeating-linear-gradient(180deg, #d3d3d3, transparent 2px),
+    linear-gradient(180deg, #E7E7E7 0.01%, #1A1A1A 100%);
+  }
+}
+
+:root.theme-dark {
+  --main-font: 'Inter-Variable';
+  --accent-font: 'PressStart2P';
+  --main-weight: 465;
+  --header-weight: 785;
+  --main-color: #000000;
+  --text-color: #00CC14;
+  --stroke-color: #000000;
+  --button-text-color: #00CC14;
+  --contour-color: #00CC14;
+  --hover-heart-color: #00CC14;
+  --active-heart-color: #FF0000;
+  --background-color:
+  repeating-linear-gradient(90deg, #000, transparent 2px),
+  repeating-linear-gradient(180deg, #000, transparent 2px),
+  linear-gradient(180deg, #007F0C 0.01%, #004306 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-font: 'Inter-Variable';
+    --accent-font: 'PressStart2P';
+    --main-weight: 465;
+    --header-weight: 785;
+    --main-color: #000000;
+    --text-color: #00CC14;
+    --stroke-color: #000000;
+    --button-text-color: #00CC14;
+    --contour-color: #00CC14;
+    --hover-heart-color: #00CC14;
+    --active-heart-color: #FF0000;
+    --background-color:
+    repeating-linear-gradient(90deg, #000, transparent 2px),
+    repeating-linear-gradient(180deg, #000, transparent 2px),
+    linear-gradient(180deg, #007F0C 0.01%, #004306 100%);
+  }
+}
