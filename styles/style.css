@@ -44,18 +44,14 @@
   border: 2px solid var(--text-color);
 }
 
-.header-title {
-  margin-bottom: 25px;
-}
-
 .header-main {
   font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
 }
 
 .header-name {
   text-transform: uppercase;
-  margin-top: 20px;
-  font-size: 23px;
+  margin: 20px auto 25px;
+  font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
   line-height: 23px;
   font-family: var(--accent-font), sans-serif;
   font-weight: var(--main-weight);
@@ -450,7 +446,11 @@
   }
 }
 
-@media (width <= 375px) {
+@media (width < 376px) {
+  .header {
+    block-size: 327px;
+  }
+    
   .save-button {
     width: 306px;
     height: 84px;
