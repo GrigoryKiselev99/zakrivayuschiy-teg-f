@@ -193,8 +193,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 14px;
+  gap: 11px;
   margin-bottom: 25px;
+}
+
+.theme-menu {
+  margin-left: 25px;
 }
 
 .card__like-button {
@@ -214,16 +218,16 @@
   color: var(--text-color);
 }
 
-.button-animations {
+.button-style {
   position: relative;
   overflow: hidden;
 }
 
-.button-animations:hover {
+.button-style:hover {
   cursor: pointer;
 }
 
-.button-animations::before {
+.button-style::before {
   content: "";
   height: 100%;
   width: 100%;
@@ -235,16 +239,16 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.button-animations:hover::before {
+.button-style:hover::before {
   transform: translate(0);
   transition: transform 0.5s ease-in-out;
 }
 
-.button-animations:focus {
+.button-style:focus {
   outline: none;
 }
 
-.button-animations:focus-visible {
+.button-style:focus-visible {
   box-shadow: 2px 2px 0 0 var(--text-color);
   transition: 0.5s ease-in-out;
 }
@@ -455,6 +459,10 @@
 @media (width < 376px) {
   .header {
     block-size: 327px;
+  }
+
+  .header-name {
+    margin: 15px auto 20px;
   }
     
   .save-button {
